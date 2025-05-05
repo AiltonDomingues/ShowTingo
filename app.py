@@ -1,4 +1,3 @@
-import streamlit as st
 import pandas as pd
 
 # Carregar dados do CSV
@@ -13,7 +12,7 @@ df['Mesa'] = df['Mesa'].astype(str).str.strip()
 st.title("🔍 Consulta de Assento - Show Tingo Santi")
 
 # Campo de input
-assento = st.text_input("Digite o número do assento (ex: 3):")
+assento = st.text_input("Digite o número do assento:")
 
 if assento:
     assento = assento.strip()
@@ -29,3 +28,5 @@ if assento:
             st.info(f"✅ Mesa: {mesa}\n🪑 Assento disponível")
     else:
         st.error("❌ Assento não encontrado.")
+        
+st.image("Mapa.png", use_container_width=True)
