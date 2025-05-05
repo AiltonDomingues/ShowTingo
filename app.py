@@ -30,4 +30,4 @@ if assento:
     else:
         st.error("❌ Assento não encontrado.")
         
-st.image("Mapa.png", use_container_width=True)
+st.image("Mapa.PNG", use_container_width=True)
